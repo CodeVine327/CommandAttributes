@@ -1,0 +1,15 @@
+name: CommandAttributes
+version: '${version}'
+main: io.github.codevine327.commandattributes.CommandAttributes
+api-version: '1.20'
+authors: [ TheLittle_Yang ]
+depend:
+  - MMOCore
+
+commands:
+  cmdatt:
+    permission: cmdatt.admin
+
+permissions:
+  cmdatt.admin:
+    default: op
