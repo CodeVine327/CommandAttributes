@@ -20,7 +20,7 @@ public class PlayerListener implements Listener {
         if (allSta != null) {
             for (String key : allSta.getKeys(false)) {
                 if (!key.equals("PLAYER_NAME")) {
-                    DataUtil.addStat(player, key, config.getInt(uuid + "." + key), false);
+                    DataUtil.addStat(player, key, config.getDouble(uuid + "." + key), false);
                 }
             }
         }
