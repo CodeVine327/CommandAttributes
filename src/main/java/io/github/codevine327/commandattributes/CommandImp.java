@@ -49,7 +49,9 @@ public class CommandImp implements CommandExecutor {
         }
 
         DataUtil.addStat(player, statName, statValue, true);
-        sender.sendMessage("已为" + player.getName() + "添加自定义属性修改器，属性" + statName + "：" + statValue);
+        if (CommandAttributes.config.getBoolean("enable-command-message", true)) {
+            sender.sendMessage("已为" + player.getName() + "添加自定义属性修改器，属性" + statName + "：" + statValue);
+        }
         return true;
     }
 }
