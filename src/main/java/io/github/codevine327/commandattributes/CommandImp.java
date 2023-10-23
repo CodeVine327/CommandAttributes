@@ -39,7 +39,7 @@ public class CommandImp implements CommandExecutor {
 
         String playerName = args[0];
         String statName = args[1];
-        int statValue = Integer.parseInt(args[2]);
+        double statValue = Double.parseDouble(args[2]);
 
         Player player = Bukkit.getPlayer(playerName);
 
